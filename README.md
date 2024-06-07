@@ -1,57 +1,72 @@
-<div align="center"><strong>Next.js 14 Admin Dashboard Template</strong></div>
-<div align="center">Built with the Next.js App Router</div>
-<br />
-<div align="center">
-<a href="https://next-admin-dash.vercel.app/">Demo</a>
-<span> · </span>
-<a href="https://vercel.com/templates/next.js/admin-dashboard-tailwind-postgres-react-nextjs">Clone & Deploy</a>
-<span>
-</div>
+# DressUp: Your Personal Styling Assistant
 
 ## Overview
 
-This is a starter template using the following stack:
+**DressUp** is a revolutionary styling assistant app designed to help individuals find their perfect look. Many people feel overwhelmed by fashion choices and seek a simple, responsible way to curate their wardrobe. DressUp addresses this need by considering both individual physical traits (like skin tone, eye color, and body shape) and social traits (such as desired self-image and how they want to be perceived) to offer personalized style recommendations.
 
-- Framework - [Next.js 14](https://nextjs.org/)
-- Language - [TypeScript](https://www.typescriptlang.org)
-- Auth - [NextAuth.js](https://next-auth.js.org)
-- Database - [Postgres](https://vercel.com/postgres)
-- Deployment - [Vercel](https://vercel.com/docs/concepts/next.js/overview)
-- Styling - [Tailwind CSS](https://tailwindcss.com)
-- Components - [Shadcn UI](https://ui.shadcn.com/)
-- Analytics - [Vercel Analytics](https://vercel.com/analytics)
-- Formatting - [Prettier](https://prettier.io)
+### How It Works
 
-This template uses the new Next.js App Router. This includes support for enhanced layouts, colocation of components, tests, and styles, component-level data fetching, and more.
+1. **Data Collection**: DressUp gathers data on an individual's traits, habits, and preferences.
+2. **AI-Generated Sketches**: Using AI, it generates sketches of potential looks to help the individual visualize their new image.
+3. **Future Integration**: We plan to integrate with local store inventories to suggest and locate available clothing items for immediate purchase.
+
+This unique combination of personalization, convenience, and creativity makes DressUp an essential tool for anyone looking to enhance their appearance while staying true to their inner nature.
+
+## Tech Stack
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Authentication**: NextAuth.js
+- **Database**: Postgres
+- **Deployment**: Vercel
+- **Styling**: Tailwind CSS
+- **Components**: Shadcn UI
+- **Analytics**: Vercel Analytics
+- **Formatting**: Prettier
 
 ## Getting Started
 
-During the deployment, Vercel will prompt you to create a new Postgres database. This will add the necessary environment variables to your project.
+### Prerequisites
 
-Inside the Vercel Postgres dashboard, create a table based on the schema defined in this repository.
+Ensure you have the following installed:
 
-```
-CREATE TABLE users (
-  id SERIAL PRIMARY KEY,
-  email VARCHAR(255) NOT NULL,
-  name VARCHAR(255),
-  username VARCHAR(255)
-);
-```
+- Node.js
+- pnpm (preferred package manager)
 
-Insert a row for testing:
+### Installation
 
-```
-INSERT INTO users (id, email, name, username) VALUES (1, 'me@site.com', 'Me', 'username');
-```
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd dressup
+   ```
 
-Copy the `.env.example` file to `.env` and update the values.
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
-Finally, run the following commands to start the development server:
+### Running the Development Server
 
-```
-pnpm install
-pnpm dev
-```
+1. Start the development server:
+   ```bash
+   pnpm dev
+   ```
 
-You should now be able to access the application at http://localhost:3000.
+2. You should now be able to access the application at [http://localhost:3000](http://localhost:3000).
+
+## Deployment
+
+The application is deployed on Vercel. Access the live version at [DressUp](https://soundsgood-fashion-generator.vercel.app/analyze).
+
+## Contributing
+
+We welcome contributions! Please fork the repository and submit pull requests.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+Enhance your appearance while staying true to your inner nature with **DressUp**!
